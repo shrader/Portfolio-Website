@@ -1,19 +1,23 @@
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
-html{
+html {
   font-size: 10px;
   font-family: 'Montserrat', sans-serif;
 }
 
-a{
+body {
+  overflow-x: hidden;
+}
+
+a {
   
 }
 
-.container{
+.container {
   min-height: 80vh;
   width 100%;
   display: flex;
@@ -26,7 +30,7 @@ a{
 	font-size: 4rem;
 	font-weight: 300;
 	color: black;
-	margin-bottom: 30px;
+	margin-bottom: 60px;
 	text-transform: uppercase;
 	letter-spacing: .2rem;
 	text-align: center;
@@ -45,12 +49,12 @@ p {
   width: 70%;
 }
 
-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 95%;
+h2 {
+  margin-top: 40px;
+  margin-bottom: 80px;
+  font-size: 2rem;
 }
+
 
 hr {
     max-width: 85%;
@@ -84,7 +88,7 @@ hr {
   justify-content: center;
 }
 
-#hero{
+#hero {
   background-image: url(https://cdn.glitch.com/1ca1d9bd-efca-4007-bcec-cb256aaa5758%2Fpexels-andrew-neel-2312369.jpg?v=1610665627434);
   background-size: cover;
   background position: top center;
@@ -92,7 +96,7 @@ hr {
   z-index: 1;
 }
 
-#hero::after{
+#hero::after {
   content: '';
   position: absolute;
   left: 0;
@@ -104,7 +108,7 @@ hr {
   z-index: -1;
 }
 
-#hero h1{
+#hero h1 {
   display: block;
   width: fit-content;
   font-size: 4rem;
@@ -113,7 +117,7 @@ hr {
 }
 
 
-#hero .action{
+#hero .action {
   display: inline-block;
   padding: 10px 30px;
   color: white;
@@ -127,11 +131,11 @@ hr {
   transition-property: background-color, color;
 }
 
-#hero a{
+#hero a {
   text-decoration: none;
 }
 
- #hero .action:hover{
+ #hero .action:hover {
   color: white;
   background-color: #FF652F;
 }
@@ -194,6 +198,8 @@ https://codepen.io/jupago/pen/GPxqLX */
 
 }
 
+
+
   /* Blockquote subheader */
 .blockquote h4 {
     position: relative;
@@ -209,3 +215,77 @@ https://codepen.io/jupago/pen/GPxqLX */
 }
 
 /* End Block quote */
+
+
+/* Tech skills */
+
+.tech {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  grid-gap: 1rem;
+  padding: 1rem 80px;
+  font-size: 1.2rem;
+}
+
+.tech img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  height: 200px;
+  width: 200px;
+  
+}
+
+/* End Tech Skills */
+
+/* Contact */
+
+.contacts {
+  display: grid;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  grid-gap: 5rem;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+}
+
+
+#contact-section {
+  margin-bottom: 30px;
+}
+
+.contact h2 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 3rem;
+}
+
+.contact h3 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  margin-right: 10px;
+}
+
+/* End Contact */
+
+/* Footer */
+
+#footer {
+  background: #272727;
+  min-height: 100px;
+  text-align: center;
+}
+
+.footer-content p {
+  padding-top: 50px;
+  margin-bottom: 0px;
+  color: white;
+}
+
+/* End Footer */
