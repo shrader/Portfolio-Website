@@ -124,9 +124,10 @@ hr {
   font-size: 1.2rem;
 }
 
-/* not being used yet is for mobile menu */
+
 #toggle {
   font-size: 2.5rem;
+  display: none;
 }
 
 
@@ -381,6 +382,10 @@ https://codepen.io/jupago/pen/GPxqLX */
 	z-index: 1;
 	overflow-x: hidden;
   }
+	
+ #toggle {
+    display:block;
+  }
   
   
  
@@ -405,16 +410,16 @@ https://codepen.io/jupago/pen/GPxqLX */
 	z-index: 1;
 	overflow-x: hidden;
   }
+	
+ #toggle {
+    display:block;
+  }
   
   
   
 }
 
 @media only screen and (min-width: 768px) {
-  
-  #toggle {
-    display:none;
-  }
   
   #nav .nav-bar {
 	display: flex;
