@@ -10,9 +10,9 @@
     <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:300,400,600" rel="stylesheet">
 	  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/style.css">
     
-    <script src="script.js" defer></script>
+    <script src="/script.js" defer></script>
     <script src="https://kit.fontawesome.com/d92a54da96.js" crossorigin="anonymous"></script>
   </head>  
   <body>
@@ -22,7 +22,7 @@
     
     <section id="nav">
     <div class="navigation">
-      <div id="navigation-bar" class="nav-bar">
+      <div id="navigation-bar" class="nav-bar nav">
        <div id="logo" class="logo">
          <h1><span>J</span>S</h1>
         </div>
@@ -31,13 +31,13 @@
             <div class="bar">
             </div>
           </div>
-          <ul id="nav-ul">
-            <li id="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
-            <li class="item"><a href="#hero" data-after="Home">Home</a></li>
-            <li class="item"><a href="#landing-area" data-after="Welcome">Welcome</a></li>
-            <li class="item"><a href="#about-hr" data-after="About">About Me</a></li>
-            <li class="item"><a href="#tech-hr" data-after="Tech">Technologies</a></li>
-            <li class="item"><a href="#contact-hr" data-after="Contact">Connect</a></li>
+          <ul id="nav-ul" class="test">
+            <li id="toggle" class="nav"><a class="nav"><i class="fas fa-bars nav"></i></a></li>
+            <li class="item nav"><a class="nav" href="#hero" data-after="Home">Home</a></li>
+            <li class="item nav"><a class="nav" href="#landing-area" data-after="Welcome">Welcome</a></li>
+            <li class="item nav"><a class="nav" href="#about-hr" data-after="About">About Me</a></li>
+            <li class="item nav"><a class="nav" href="#tech-hr" data-after="Tech">Technologies</a></li>
+            <li class="item nav"><a class="nav" href="#contact-hr" data-after="Contact">Connect</a></li>
           </ul>
         </div>
       </div>
@@ -67,13 +67,13 @@
       <h1 class="section-title">Welcome</h1>
       <p>Welcome to the site! My name is John and I'm on a journey to become the best developer I can be.
         I love helping people find innovative solutions to difficult problems. 
-        Right now the vehicle I'm using to do that is web & software development.
+        The way that I'm doing that now is with web & software development.
         Feel free to take a look at what I'm working on. If you have any questions or even just want to chat about technology, business or philosophy,
         don't hesitate to get in touch.</p>
     </div>
     <!-- Quote -->
     <div >
-    <div class="blockquote-wrapper item">
+    <div class="blockquote-wrapper">
   <div class="blockquote">
     <!-- colors: blue- "color:#009aff" purple- "color:#6500ff"   -->
     <h1>
@@ -115,7 +115,7 @@
 </section>
     <!-- End About -->
     
-    <hr id=tech-hr>
+    <hr id="tech-hr">
     
     <!--Technologies -->
 <section id="technologies">
@@ -155,7 +155,7 @@
      <div class="skill-box">
       <div class="skill-title">
         <div class="image">
-          <img src="https://cdn.worldvectorlogo.com/logos/javascript.svg">
+          <img src="https://cdn.glitch.com/1ca1d9bd-efca-4007-bcec-cb256aaa5758%2Fthumbnails%2F1024px-Unofficial_JavaScript_logo_2.svg.png?1619754137267">
         </div>
         <h3>JavaScript</h3>
       </div>
@@ -194,12 +194,12 @@
      <div class="skill-box">
       <div class="skill-title">
         <div class="image">
-          <img src="https://cdn.iconscout.com/icon/free/png-512/mongodb-226029.png">
+          <img src="http://assets.stickpng.com/images/584830f5cef1014c0b5e4aa1.png">
         </div>
-        <h3>MongoDB</h3>
+        <h3>React</h3>
       </div>
       <p>
-        If you need a more felxible approach for your data that can scale rapidly, MongoDB might be the right way to go.
+      React is a Javascript front-end library for building user interfaces and single page applications.
       </p>
     </div>
   </div>  

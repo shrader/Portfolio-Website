@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  touch-action: pan-y;
 }
 
 html {
@@ -124,17 +125,10 @@ hr {
   font-size: 1.2rem;
 }
 
-<<<<<<< HEAD
 /* not being used yet is for mobile menu */
 #toggle {
   font-size: 2.5rem;
   display: block;
-=======
-
-#toggle {
-  font-size: 2.5rem;
-  display: none;
->>>>>>> parent of d4ad983... Update style.css
 }
 
 
@@ -377,7 +371,7 @@ https://codepen.io/jupago/pen/GPxqLX */
 	display: flex;
 	align-items: center;
 	height: 100%;
-	max-width: 1300px;
+	max-width: 100%;
 	padding: 0 10px;
   width: 100%;
   justify-content: space-between;
@@ -434,9 +428,9 @@ https://codepen.io/jupago/pen/GPxqLX */
 	height: 100%;
 	max-width: 1300px;
 	padding: 0 10px;
-  }
+}
   
-  #nav-ul {
+#nav-ul {
   display: flex;
   } 
   
@@ -446,7 +440,8 @@ https://codepen.io/jupago/pen/GPxqLX */
   
   .logo {
   display: block;
-  }
+}
   
 }
+
 

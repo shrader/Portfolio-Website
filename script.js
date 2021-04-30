@@ -1,8 +1,49 @@
-let item = document.getElementsByClassName("item");
+const items = document.getElementsByClassName("item");
+const toggle = document.getElementById("toggle");
+let menuHidden = true
+let heightOutput = window.innerHeight;
+let widthOutput = window.innerWidth;
 
-let toggle = document.getElementById("toggle");
+function handleWindowSizeChange() {
+  widthOutput = window.innerWidth;
+  heightOutput = window.innerHeight;
+  
+  if (widthOutput >= 770) {
+    showMenuItems();
+  }
+  if (widthOutput < 770) {
+    hideMenuItems();
+  }
+}
 
-toggle.onclick.addEventListener("click", function(event){
-  event.preventDefault()
-  item.style.display = "block"
+window.onresize = handleWindowSizeChange;
+
+  
+toggle.addEventListener("click", function(event){ 
+  if (menuHidden) {
+    showMenuItems();
+  } else {
+    hideMenuItems();
+  }
 });
+  
+document.body.addEventListener("click", function(event){
+  if (!event.target.classList.contains("nav") && widthOutput < 770) {
+    hideMenuItems();
+  }
+})
+
+
+function showMenuItems() {
+  for (let item of items) {
+    item.style.display = "block";
+    menuHidden = false;
+  }
+}
+
+function hideMenuItems() {
+  for (let item of items) {
+    item.style.display = "none";
+    menuHidden = true;
+  }
+}
